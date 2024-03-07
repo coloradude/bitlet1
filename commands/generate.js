@@ -17,13 +17,25 @@ const createTizenTemplate = path => {
   shell.exec('git clone https://github.com/bitmovin/bitmovin-player-tizen-demo.git')
 }
 
-const createWebOsTemplate = path => {
+const createWebOSTemplate = path => {
   shell.cd('./' || path)
-  shell.exec('git clone git@github.com:bitmovin/bitmovin-player-webos-demo.git')
+  shell.exec('git clone https://github.com/bitmovin/bitmovin-player-webos-demo.git')
+}
+
+const createiOSTemplate = path => {
+  shell.cd('./' || path)
+  shell.exec('git clone https://github.com/bitmovin/bitmovin-player-ios-samples.git')
+}
+
+const createAndroidTemplate = path => {
+  shell.cd('./' || path)
+  shell.exec('git clone https://github.com/bitmovin/bitmovin-player-android-samples.git')
 }
 
 export {
   createWebTemplate,
   createTizenTemplate,
-  createWebOsTemplate
+  createWebOSTemplate,
+  createiOSTemplate,
+  createAndroidTemplate
 }

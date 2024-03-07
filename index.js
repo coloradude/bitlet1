@@ -1,15 +1,16 @@
 #! /usr/bin/env node
 import { program } from 'commander'
+
 import {
   createWebTemplate,
   createTizenTemplate,
-  createWebOsTemplate
+  createWebOSTemplate,
+  createiOSTemplate,
+  createAndroidTemplate
 } from './commands/generate.js'
 
 program
-    // .command('web <path>')
   .command('web')
-  .option('-p, --path <path>', "Specify the path where the template will go", '.')
   .description('Create Bitmovin Web SDK sample project')
   .action(createWebTemplate)
 
@@ -21,6 +22,17 @@ program
 program
   .command('webos')
   .description('Create Bitmovin WebOS sample project')
-  .action(createWebOsTemplate)
+  .action(createWebOSTemplate)
+
+program
+  .command('ios')
+  .description('Create Bitmovin iOS sample project')
+  .action(createiOSTemplate)
+
+program
+  .command('android')
+  .description('Create Bitmovin Android sample project')
+  .action(createAndroidTemplate)
+
 
 program.parse()
