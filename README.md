@@ -1,11 +1,29 @@
-### Bitlet
+# Bitmovin Bitlet
 
-CLI tool to generate sample Bitmovin projects
+CLI tool to easily create and install sample apps for testing purposes. All commands create a sample in the current directory.
 
-#Install
+### How to install
 
 `npm i -g bitlet`
 
-#Web Sample
+### Commands
 
 `bitlet web`
+
+Builds a basic web sample
+
+`bitlet tizen`
+
+Builds a basic Tizen sample
+
+`bitlet webos`
+
+Builds a basic WebOS sample
+
+`bitlet ios`
+
+Builds a basic iOS sample and installs Pods
+
+`bitlet android`
+
+Builds a basic Android sample and runs Gradle
