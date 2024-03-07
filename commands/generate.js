@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url'
 
 import shell from 'shelljs'
 
-const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
-const __dirname = path.dirname(__filename); // get the name of the directory
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const createWebTemplate = path => {
   const webHtml = fs.readFileSync(`${__dirname}/../templates/web.html`, 'utf8')
