@@ -142,3 +142,7 @@ media-session-api/build
 
 # Other IDEs
 .vscode
+
+# Testing builds
+bitmovin-player-ios-samples
+bitmovin-player-android-samples
