@@ -6,7 +6,8 @@ import {
   createTizenTemplate,
   createWebOSTemplate,
   createiOSTemplate,
-  createAndroidTemplate
+  createAndroidTemplate,
+  createRokuTemplate
 } from './commands/generate.js'
 
 program
@@ -33,6 +34,11 @@ program
   .command('android')
   .description('Create Bitmovin Android sample project')
   .action(createAndroidTemplate)
+
+program
+  .command('roku')
+  .description('Create Bitmovin Android sample project')
+  .action(createRokuTemplate)
 
 
 program.parse()
