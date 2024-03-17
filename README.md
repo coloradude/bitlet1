@@ -26,4 +26,8 @@ Builds a basic iOS sample and installs Pods
 
 `bitlet android`
 
-Builds a basic Android sample and runs Gradle
+Builds a basic Android sample
+
+`bitlet roku`
+
+Builds basic Roku sample
